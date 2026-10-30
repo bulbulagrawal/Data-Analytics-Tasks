@@ -29,11 +29,11 @@ Using this data, we can create a dashboard displaying:
 - Product-wise Performance
 - Monthly Sales Trends
 
-[Excel ダッシュボードの作り方](https://images.openai.com/static-rsc-4/G99WX3ZfTwuAYbYXw6CGtFvLgsMiFL9XHuPoJJw9WidHMjL1m7D0WUdJEYL7TkZVj6oQ8PdRJq-TGwdEiw9NM5dynEEmZmftkQvI9SwwlQAmrCG7NVemfL5P8K9kxqP8RdzEDIiAlCXljlzDs03Hdre7-Zk82jYcO3IinOpgYt0?purpose=inline)
+(https://images.openai.com/static-rsc-4/G99WX3ZfTwuAYbYXw6CGtFvLgsMiFL9XHuPoJJw9WidHMjL1m7D0WUdJEYL7TkZVj6oQ8PdRJq-TGwdEiw9NM5dynEEmZmftkQvI9SwwlQAmrCG7NVemfL5P8K9kxqP8RdzEDIiAlCXljlzDs03Hdre7-Zk82jYcO3IinOpgYt0?purpose=inline)
 
 [rowspeak.ai](https://rowspeak.ai/ja/blog/how-to-build-excel-dashboards/?utm_source=chatgpt.com)
 
-Objective: Convert raw business data into an easy-to-understand visual report.
+**Objective**: Convert raw business data into an easy-to-understand visual report.
 
 ## 2. Dashboard Principles
 
@@ -70,7 +70,7 @@ The dashboard should display correct and updated information.
 
 Important information should be displayed prominently.
 
-For example:
+**For example:**
 
 1. Total Revenue
 2. Total Profit
@@ -82,7 +82,7 @@ For example:
 
 Users should be able to filter and analyze information.
 
-Examples:
+**Examples:**
 
 - Select a particular region.
 - Select a product category.
@@ -195,7 +195,7 @@ Returns the lowest sales value.
 =IFERROR(SUM(E2:E100)/SUM(D2:D100),0)
 ```
 
-Format the result as Percentage.
+Format the result as a percentage.
 
 8\. Sales Growth
 
@@ -208,7 +208,7 @@ Suppose:
 =IFERROR((B2-C2)/C2,0)
 ```
 
-Format as Percentage.
+Format as a percentage.
 
 ### How to Create KPI Cards
 
@@ -254,7 +254,7 @@ Example: Region-wise Sales.
 | East   | 60,000 |
 | West   | 30,000 |
 
-Steps:
+**Steps:**
 
 1. Select the data.
 2. Go to Insert.
@@ -395,7 +395,7 @@ Steps:
 
 Used to create a drop-down list for selecting categories.
 
-Example:
+**Example:**
 
 ```
 =UNIQUE(B2:B100)
@@ -416,7 +416,7 @@ To create a drop-down:
 
 Highlights important values using colors, data bars, or icons.
 
-Example:
+**Example:**
 
 ```
 =D2>50000
@@ -585,7 +585,7 @@ This filters out rows containing only blank or null values.
 
 Sometimes data contains unnecessary spaces.
 
-Example:
+**Example:**
 
 `"  Rahul  "` becomes `"Rahul"`.
 
@@ -612,7 +612,7 @@ Text.Clean([Customer_Name])
 
 ### E. Replace Values
 
-Example:
+**Example:**
 
 Replace `Ind` with `India`.
 
@@ -633,13 +633,13 @@ Table.ReplaceValue(Source, "Ind", "India", Replacer.ReplaceText, {"Country"})
 
 Null represents missing data.
 
-Example: If the Region column contains null, replace it with "Unknown" when appropriate.
+**Example**: If the Region column contains null, replace it with "Unknown" when appropriate.
 
 ```
 Table.ReplaceValue(Source, null, "Unknown", Replacer.ReplaceValue, {"Region"})
 ```
 
-Important: Do not replace missing values blindly. Understand why the data is missing before deciding how to handle it.
+**Important**: Do not replace missing values blindly. Understand why the data is missing before deciding how to handle it.
 
 ### G. Change Data Types
 
@@ -653,13 +653,13 @@ Correct data types are important for calculations.
 | Customer Name | Text              |
 | Profit        | Decimal Number    |
 
-Steps:
+**Steps**:
 
 1. Select the column.
 2. Click the Data Type icon.
 3. Choose the correct data type.
 
-M Language Syntax:
+**M Language Syntax**:
 
 ```
 Table.TransformColumnTypes(
@@ -680,13 +680,13 @@ Data transformation means modifying the structure or format of raw data to make 
 
 Used to remove unnecessary information.
 
-Steps:
+**Steps**:
 
 1. Select the unwanted column.
 2. Right-click.
 3. Select Remove.
 
-M Syntax:
+**M Syntax**:
 
 ```
 Table.RemoveColumns(Source, {"Column1", "Column2"})
@@ -694,11 +694,11 @@ Table.RemoveColumns(Source, {"Column1", "Column2"})
 
 ### B. Rename Columns
 
-Example:
+**Example**:
 
 `Cust_Name` → `Customer Name`
 
-M Syntax:
+**M Syntax**:
 
 ```
 Table.RenameColumns(Source, {{"Cust_Name", "Customer Name"}})
@@ -708,7 +708,7 @@ Table.RenameColumns(Source, {{"Cust_Name", "Customer Name"}})
 
 Used to divide one column into multiple columns.
 
-Example:
+**Example**:
 
 | Full Name    |
 | ------------ |
@@ -722,7 +722,7 @@ After splitting:
 | Rahul      | Sharma    |
 | Priya      | Verma     |
 
-Steps:
+**Steps**:
 
 1. Select the Full Name column.
 2. Go to Transform.
@@ -731,7 +731,7 @@ Steps:
 5. Choose Space.
 6. Click OK.
 
-M Syntax:
+**M Syntax**:
 
 ```
 Table.SplitColumn(
@@ -746,11 +746,11 @@ Table.SplitColumn(
 
 Combines two or more columns into one.
 
-Example:
+**Example**:
 
 First Name + Last Name = Full Name.
 
-Steps:
+**Steps**:
 
 1. Select both columns.
 2. Go to Transform.
@@ -758,7 +758,7 @@ Steps:
 4. Select a separator.
 5. Click OK.
 
-M Syntax:
+**M Syntax**:
 
 ```
 Table.CombineColumns(
@@ -773,34 +773,32 @@ Table.CombineColumns(
 
 Used to create a new column using a formula.
 
-Example:
+**Example**:
 
 Sales = 50,000
-
 Cost = 35,000
-
 Profit = 15,000
 
-Steps:
+**Steps**:
 
 1. Go to Add Column.
 2. Select Custom Column.
 3. Enter the column name.
 4. Enter the formula.
 
-M Formula:
+**M Formula**:
 
 ```
 [Sales] - [Cost]
 ```
 
-New column name: `Profit`
+**New column name: `Profit`**
 
 ### F. Conditional Column
 
 Creates a new column based on conditions.
 
-Example:
+**Example**:
 
 | Sales  | Performance |
 | ------ | ----------- |
@@ -808,7 +806,7 @@ Example:
 | 35,000 | Medium      |
 | 10,000 | Low         |
 
-M Formula:
+**M Formula**:
 
 ```
 if [Sales] >= 50000 then "High"
@@ -820,9 +818,9 @@ else "Low"
 
 Used to summarize data based on categories.
 
-Example:
+**Example**:
 
-Raw data:
+**Raw data**:
 
 | Region | Sales  |
 | ------ | ------ |
@@ -831,14 +829,14 @@ Raw data:
 | South  | 25,000 |
 | South  | 15,000 |
 
-Grouped result:
+**Grouped result**:
 
 | Region | Total Sales |
 | ------ | ----------- |
 | North  | 50,000      |
 | South  | 40,000      |
 
-Steps:
+**Steps**:
 
 1. Select Region.
 2. Go to Home.
@@ -847,7 +845,7 @@ Steps:
 5. Select Sales.
 6. Click OK.
 
-M Syntax:
+**M Syntax**:
 
 ```
 Table.Group(
@@ -861,7 +859,7 @@ Table.Group(
 
 Append combines rows from multiple tables.
 
-Example:
+**Example**:
 
 - January Sales
 - February Sales
@@ -869,7 +867,7 @@ Example:
 
 All three tables are combined into one table.
 
-M Syntax:
+**M Syntax**:
 
 ```
 Table.Combine({January, February, March})
@@ -881,30 +879,30 @@ Use case: Combining monthly sales reports.
 
 Merge combines columns from two tables based on a common field.
 
-Example:
+## Example:
 
-Sales Table
+**Sales Table**
 
 | Product ID | Sales  |
 | ---------- | ------ |
 | P101       | 50,000 |
 | P102       | 30,000 |
 
-Product Table
+**Product Table**
 
 | Product ID | Product Name |
 | ---------- | ------------ |
 | P101       | Laptop       |
 | P102       | Mobile       |
 
-After merging:
+**After merging:**
 
 | Product ID | Sales  | Product Name |
 | ---------- | ------ | ------------ |
 | P101       | 50,000 | Laptop       |
 | P102       | 30,000 | Mobile       |
 
-M Syntax:
+**M Syntax:**
 
 ```
 Table.NestedJoin(
@@ -981,289 +979,38 @@ In Query Properties, you can configure:
 - Refresh every specified number of minutes.
 - Enable background refresh where supported.
 
-Important: Refresh updates the data using the saved steps. It does not automatically fix new errors, changed column names, or broken source paths. The source must remain accessible and compatible.
+**Important**: Refresh updates the data using the saved steps. It does not automatically fix new errors, changed column names, or broken source paths. The source must remain accessible and compatible.
 
-# 11. Practical Project: Raw Business Data to Analytical Dashboard
-
-Phase outcome
-
-Project: Sales Performance Dashboard using Excel and Power Query
-
-### Step 1: Understand the Raw Dataset
-
-Assume the business provides a sales spreadsheet with the following columns:
-
-| Column        | Description         |
-| ------------- | ------------------- |
-| Order ID      | Unique order number |
-| Order Date    | Date of transaction |
-| Customer Name | Customer details    |
-| Region        | Sales region        |
-| Product       | Product name        |
-| Category      | Product category    |
-| Quantity      | Units sold          |
-| Sales         | Revenue             |
-| Cost          | Product cost        |
-| Profit        | Profit earned       |
-
-### Step 2: Import Data
-
-- Open Excel.
-- Go to Data.
-- Select Get Data.
-- Choose From Excel Workbook.
-- Select the raw sales file.
-- Click Transform Data.
-
-### Step 3: Clean Data
-
-Perform the following operations:
-
-- Remove duplicate records.
-- Remove blank rows.
-- Trim customer names.
-- Correct data types.
-- Replace inconsistent category names.
-- Handle missing values.
-- Remove unnecessary columns.
-
-### Step 4: Transform Data
-
-Create additional columns.
-
-Profit Calculation
-
-```
-[Sales] - [Cost]
-```
-
-Profit Margin
-
-```
-if [Sales] = 0 then 0
-else [Profit] / [Sales]
-```
-
-Sales Performance
-
-```
-if [Sales] >= 50000 then "High"
-else if [Sales] >= 20000 then "Medium"
-else "Low"
-```
-
-Month Name
-
-```
-Date.MonthName([Order Date])
-```
-
-### Step 5: Load Data into Excel
-
-1. Click Home.
-2. Select Close & Load.
-3. Load the cleaned data into an Excel Table.
-
-Alternatively, load the data into the Data Model if you want to build more advanced relationships and PivotTables.
-
-### Step 6: Create PivotTables
-
-Create the following summaries:
-
-| PivotTable           | Rows        | Values        |
-| -------------------- | ----------- | ------------- |
-| Region-wise Sales    | Region      | Sum of Sales  |
-| Product-wise Sales   | Product     | Sum of Sales  |
-| Monthly Sales        | Month       | Sum of Sales  |
-| Category-wise Profit | Category    | Sum of Profit |
-| Performance Analysis | Performance | Sum of Sales  |
-
-### Step 7: Create KPI Cards
-
-Calculate:
-
-```
-=SUM(SalesData[Sales])
-```
-
-```
-=SUM(SalesData[Profit])
-```
-
-```
-=COUNTA(SalesData[Order ID])
-```
-
-```
-=AVERAGE(SalesData[Sales])
-```
-
-Assuming the cleaned Excel table is named `SalesData`.
-
-### Step 8: Create Charts
-
-Create these charts:
-
-1. Region-wise Sales – Column Chart.
-2. Product-wise Sales – Bar Chart.
-3. Monthly Sales – Line Chart.
-4. Category-wise Profit – Donut Chart.
-
-### Step 9: Add Interactive Filters
-
-Insert:
-
-- Region Slicer.
-- Product Slicer.
-- Category Slicer.
-- Order Date Timeline.
-
-Connect slicers to the relevant PivotTables using Report Connections.
-
-### Step 10: Design the Final Dashboard
-
-[Sales Excel Dashboard - Etsy.de](https://images.openai.com/static-rsc-4/TyUq6eDc1b7RZ6GzAqdlEecp7p33h-B6zw3UNJ8y6yWwYHlQ-v3Qf2BCX3i7NWQZDhyQeeP_7kT9PhwLsYGLGZEGtqQeuNoAif7RFG1qtJhBANV1SNl3vkJJRmpGJ18ds4s32DVXZukqAEy8UjGvDfY81onDGPusq-Kj5GK-J_w?purpose=inline)
-
-[etsy.com](https://www.etsy.com/listing/1850598239/sales-excel-dashboard?utm_source=chatgpt.com)
-
-Recommended dashboard layout:
-
-| Section    | Information                                |
-| ---------- | ------------------------------------------ |
-| Top        | Dashboard Title                            |
-| First Row  | Total Sales, Profit, Orders, Average Sales |
-| Second Row | Monthly Sales Trend                        |
-| Third Row  | Region-wise Sales and Product-wise Sales   |
-| Fourth Row | Category-wise Profit                       |
-| Side/Top   | Slicers and Timeline                       |
-
-### Step 11: Test the Dashboard
-
-Verify:
-
-- KPI formulas are correct.
-- Charts display the correct data.
-- Slicers filter all connected reports.
-- Dates are properly sorted.
-- No duplicate data is counted incorrectly.
-- Refresh All updates the reports.
-
-# 12. Important Excel and Power Query Syntax Cheat Sheet
-
-## A. Excel Formulas
-
-| Formula | Syntax                                              | Purpose                       |
-| ------- | --------------------------------------------------- | ----------------------------- |
-| SUM     | `=SUM(A2:A100)`                                     | Total                         |
-| AVERAGE | `=AVERAGE(A2:A100)`                                 | Average                       |
-| COUNT   | `=COUNT(A2:A100)`                                   | Count numeric cells           |
-| COUNTA  | `=COUNTA(A2:A100)`                                  | Count non-empty cells         |
-| MAX     | `=MAX(A2:A100)`                                     | Highest value                 |
-| MIN     | `=MIN(A2:A100)`                                     | Lowest value                  |
-| COUNTIF | `=COUNTIF(B2:B100,"North")`                         | Count by condition            |
-| SUMIF   | `=SUMIF(B2:B100,"North",C2:C100)`                   | Sum by condition              |
-| SUMIFS  | `=SUMIFS(D2:D100,B2:B100,"North",C2:C100,"Laptop")` | Sum using multiple conditions |
-| IF      | `=IF(A2>=50000,"High","Low")`                       | Conditional result            |
-| IFERROR | `=IFERROR(A2/B2,0)`                                 | Handle formula errors         |
-| XLOOKUP | `=XLOOKUP(A2,F:F,G:G,"Not Found")`                  | Search and return data        |
-| UNIQUE  | `=UNIQUE(A2:A100)`                                  | Extract unique values         |
-| FILTER  | `=FILTER(A2:D100,B2:B100="North")`                  | Filter data                   |
-| TEXT    | `=TEXT(A2,"mmm-yyyy")`                              | Format values as text         |
-
-## B. Power Query M Language
-
-| Operation         | Syntax                                                                          |
-| ----------------- | ------------------------------------------------------------------------------- |
-| Remove Duplicates | `Table.Distinct(Source)`                                                        |
-| Remove Columns    | `Table.RemoveColumns(Source,{"Column1"})`                                       |
-| Rename Column     | `Table.RenameColumns(Source,{{"Old","New"}})`                                   |
-| Filter Rows       | `Table.SelectRows(Source, each [Sales] > 10000)`                                |
-| Add Column        | `Table.AddColumn(Source,"Profit", each [Sales]-[Cost])`                         |
-| Replace Values    | `Table.ReplaceValue(Source,"Old","New",Replacer.ReplaceText,{"Region"})`        |
-| Change Type       | `Table.TransformColumnTypes(Source,{{"Sales",type number}})`                    |
-| Append            | `Table.Combine({Table1,Table2})`                                                |
-| Group By          | `Table.Group(Source,{"Region"},{{"Total",each List.Sum([Sales]),type number}})` |
-| Trim Text         | `Text.Trim([Customer])`                                                         |
-| Clean Text        | `Text.Clean([Customer])`                                                        |
-| Current Date      | `Date.From(DateTime.LocalNow())`                                                |
-| Month Name        | `Date.MonthName([Order Date])`                                                  |
-
-Note: M is Power Query's case-sensitive formula language. The examples use illustrative query and column names; actual names must match your data.
-
-# 13. Important Interview and Practical Questions
-
-Q1. What is an Excel Dashboard?
-
-An Excel Dashboard is a visual report that displays important business information through KPIs, charts, PivotTables, and interactive filters.
-
-Q2. What is a KPI?
-
-KPI stands for Key Performance Indicator. It measures the performance of a business against a specific objective.
-
-Q3. What is the difference between a Dashboard and a Report?
-
-- Report: Provides detailed information and records.
-- Dashboard: Provides a summarized visual overview of important metrics.
-
-Q4. What is Power Query?
-
-Power Query is an Excel data transformation tool used to import, clean, combine, and prepare data for analysis.
-
-Q5. What is M Language?
-
-M Language is the formula language used by Power Query to perform data transformations.
-
-Q6. What is the difference between Append and Merge?
-
-Append combines rows from multiple tables, whereas Merge joins columns from related tables using a common key.
-
-Q7. What is the purpose of Refresh All?
-
-It updates workbook queries and connections using their saved transformation steps.
-
-Q8. What is the difference between Power Query and Excel formulas?
-
-- Excel formulas calculate results within worksheet cells.
-- Power Query prepares and transforms data before loading it into Excel or the Data Model.
-
-Q9. What is a Slicer?
-
-A Slicer is a visual filtering tool used with PivotTables and PivotCharts.
-
-Q10. Why do we use PivotTables?
-
-PivotTables summarize large amounts of data and help analyze information by categories, dates, regions, and other dimensions.
-
-# 14. Key Takeaways
+# 11. Key Takeaways
 
 ## What you should remember
 
-1. Dashboard: Converts raw business data into meaningful visual insights.
-2. Dashboard Principles: Simplicity, consistency, accuracy, visual hierarchy, and interactivity are essential.
-3. KPI Cards: Display important metrics such as Total Sales, Profit, Orders, and Growth.
-4. Charts: Help compare categories, identify trends, and understand performance.
-5. Interactive Reports: PivotTables, PivotCharts, Slicers, and Timelines make reports dynamic.
-6. Power Query: Automates data import, cleaning, transformation, and combining.
-7. Importing Data: Power Query can connect to Excel, CSV, folders, databases, and other supported sources.
-8. Data Cleaning: Removes duplicates, handles missing values, corrects data types, and cleans text.
-9. Transformations: Split, merge, append, group, filter, and create custom columns.
-10. Refresh: Reapplies saved transformation steps to updated source data.
+1. **Dashboard**: Converts raw business data into meaningful visual insights.
+2. **Dashboard Principles**: Simplicity, consistency, accuracy, visual hierarchy, and interactivity are essential.
+3. **KPI Cards**: Display important metrics such as Total Sales, Profit, Orders, and Growth.
+4. **Charts**: Help compare categories, identify trends, and understand performance.
+5. **Interactive Reports**: PivotTables, PivotCharts, Slicers, and Timelines make reports dynamic.
+6. **Power Query**: Automates data import, cleaning, transformation, and combining.
+7. **Importing Data**: Power Query can connect to Excel, CSV, folders, databases, and other supported sources.
+8. **Data Cleaning**: Removes duplicates, handles missing values, corrects data types, and cleans text.
+9. **Transformations**: Split, merge, append, group, filter, and create custom columns.
+10. **Refresh**: Reapplies saved transformation steps to updated source data.
 
-Most Important Workflow to Remember
+**Most Important Workflow to Remember**
 
-RAW DATA
-
+    RAW DATA
+        |
 IMPORT USING POWER QUERY
-
-CLEAN & TRANSFORM
-
-LOAD INTO EXCEL
-
+        |
+  CLEAN & TRANSFORM
+        |
+  LOAD INTO EXCEL
+        |
 PIVOTTABLES & CHARTS
-
+        |
 INTERACTIVE DASHBOARD
-
-BUSINESS INSIGHTS
+        |
+ BUSINESS INSIGHTS
 
 ## Final Learning Outcome
 
