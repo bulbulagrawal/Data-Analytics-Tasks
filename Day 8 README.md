@@ -28,10 +28,10 @@ Suppose your dataset contains the following sales records:
 
 A Pivot Table can summarize total sales by region:
 
-| Region          |   Total Sales |
-|  ---            |     ---       |
-| North           |    70,000     |
-| South           |    70,000     |
+|       Region    |   Total Sales |
+|        ---      |     ---       |
+|       North     |    70,000     |
+|       South     |    70,000     |
 | **Grand Total** | **1,40,000**  |
 
 ### Syntax / procedure
@@ -175,12 +175,12 @@ Menu availability can vary by Excel version and Pivot Table source.
 
 ### Calculated Field vs. Calculated Item
 
-| Feature | Calculated Field | Calculated Item |
-| --- | --- | --- |
-| Definition | Creates a calculation using data fields | Creates a calculation involving items within a field |
-| Example | Sales − Cost | Combining or comparing selected product items |
-| Typical use | Profit and other business metrics | Custom calculations between categories |
-| Availability | Supported in traditional Pivot Tables | Supported in some traditional Pivot Table fields, with restrictions |
+|    Feature   |               Calculated Field          |                       Calculated Item                               |
+|      ---     |                     ---                 |                               ---                                   |
+|   Definition | Creates a calculation using data fields |       Creates a calculation involving items within a field          |  
+|    Example   |              Sales − Cost               |         Combining or comparing selected product items               |
+|  Typical use |      Profit and other business metrics  |             Custom calculations between categories                  |
+| Availability |  Supported in traditional Pivot Tables  | Supported in some traditional Pivot Table fields, with restrictions |
 
 ### Important concepts
 
@@ -229,11 +229,9 @@ Pivot Table filters do not require formula syntax.
 
 For example, use a Value Filter to display products with sales greater than ₹50,000.
 
-Uses: Finding top-performing products, analyzing a particular region, filtering reporting periods, and identifying low-performing categories.
+**Uses**: Finding top-performing products, analyzing a particular region, filtering reporting periods, and identifying low-performing categories.
 
 ## 5. Slicers
-
-Tablas Dinámicas en Excel: Guía Paso a Paso 2026 | Aprender21
 
 [py.aprender21.com](<https://py.aprender21.com/blog/excel-tablas-dinamicas-guia?utm_source=chatgpt.com>)
 
@@ -268,17 +266,17 @@ For date-based filtering, Excel also offers a Timeline, which provides a visual 
 
 ### Slicer vs. Filter
 
-| Feature | Filter | Slicer |
-| --- | --- | --- |
-| Appearance | Dropdown menu | Clickable buttons |
-| Ease of use | Requires opening a menu | Direct visual selection |
-| Dashboard suitability | Useful for compact reports | Excellent for interactive dashboards |
-| Multiple selections | Usually through dropdown options | Often supported through multi-select controls |
-| Connections | Applied to the relevant Pivot Table | Can control multiple compatible Pivot Tables |
+|        Feature        |             Filter                  |                     Slicer                     |
+|          ---          |               ---                   |                       ---                      |
+|       Appearance      |            Dropdown menu            |                Clickable buttons               |
+|       Ease of use     |       Requires opening a menu       |              Direct visual selection           |
+| Dashboard suitability |      Useful for compact reports     |       Excellent for interactive dashboards     |
+|   Multiple selections |   Usually through dropdown options  |  Often supported through multi-select controls |
+|       Connections     | Applied to the relevant Pivot Table |   Can control multiple compatible Pivot Tables |
 
-Important: To control multiple Pivot Tables with one slicer, use Slicer → Report Connections or PivotTable Connections. The Pivot Tables generally need to share the same compatible data source or pivot cache.
+**Important**: To control multiple Pivot Tables with one slicer, use Slicer → Report Connections or PivotTable Connections. The Pivot Tables generally need to share the same compatible data source or pivot cache.
 
-Uses: Interactive dashboards, regional reports, product analysis, and management reporting.
+**Uses**: Interactive dashboards, regional reports, product analysis, and management reporting.
 
 ## 6. Pivot Charts
 
@@ -305,11 +303,11 @@ When the Pivot Table changes, the Pivot Chart updates to reflect the correspondi
 
 Suppose a Pivot Table summarizes monthly sales.
 
-| Month | Sales |
-| --- | --- |
-| January | 50,000 |
+|  Month   |  Sales |
+|   ---    |   ---  |
+| January  | 50,000 |
 | February | 70,000 |
-| March | 90,000 |
+|  March   | 90,000 |
 
 A column Pivot Chart displays one column for each month, making it easy to see that March has the highest sales.
 
@@ -325,18 +323,16 @@ Pivot Charts do not require formula syntax.
 
 ### Pivot Chart vs. Normal Chart
 
-| Feature | Pivot Chart | Normal Chart |
-| --- | --- | --- |
-| Data source | Connected to a Pivot Table | Usually references a cell range or table |
-| Interactivity | Supports Pivot filtering and field controls | Depends on the chart and data setup |
-| Updates | Follows Pivot Table summaries | Follows its referenced data range |
-| Best suited for | Interactive data analysis | Fixed charts and custom visualizations |
+|       Feature    |                 Pivot Chart                 |               Normal Chart               |
+|        ---       |                     ---                     |                     ---                  |
+|    Data source   |        Connected to a Pivot Table           | Usually references a cell range or table |
+|    Interactivity | Supports Pivot filtering and field controls |   Depends on the chart and data setup    |
+|       Updates    |         Follows Pivot Table summaries       |     Follows its referenced data range    |
+|  Best suited for |             Interactive data analysis       |   Fixed charts and custom visualizations |
 
-Uses: Sales trend analysis, regional comparisons, profit analysis, and executive dashboards.
+**Uses**: Sales trend analysis, regional comparisons, profit analysis, and executive dashboards.
 
 ## 7. Business Reporting
-
-Excel ダッシュボードの作り方
 
 [rowspeak.ai](<https://rowspeak.ai/ja/blog/how-to-build-excel-dashboards/?utm_source=chatgpt.com>)
 
@@ -358,19 +354,17 @@ In Excel, Pivot Tables and Pivot Charts are commonly used to turn raw transactio
 
 Suppose a company records sales transactions throughout the year. A business report could contain:
 
-| KPI | Definition | Example |
-| --- | --- | --- |
-| Total Sales | Total value of sales | ₹5,00,000 |
-| Total Cost | Total cost of goods sold | ₹3,50,000 |
-| Gross Profit | Sales minus cost | ₹1,50,000 |
-| Profit Margin | Gross profit divided by sales | 30% |
-| Top Product | Product with the highest sales | Laptop |
+|      KPI      |          Definition              |  Example  |
+|      ---      |             ---                  |    ---    |
+|   Total Sales |      Total value of sales        | ₹5,00,000 |
+|   Total Cost  |     Total cost of goods sold     | ₹3,50,000 |
+|  Gross Profit |         Sales minus cost         | ₹1,50,000 |
+| Profit Margin |    Gross profit divided by sales |    30%    |
+|   Top Product |   Product with the highest sales |   Laptop  |
 
 ### Useful formulas for reporting
 
 1\. Total Sales
-
-excel
 
 ```
 =SUM(SalesRange)
@@ -378,15 +372,11 @@ excel
 
 2\. Profit
 
-excel
-
 ```
 =Sales-Cost
 ```
 
 For a row-by-row calculation in a worksheet, if Sales is in B2 and Cost is in C2:
-
-excel
 
 ```
 =B2-C2
@@ -394,15 +384,11 @@ excel
 
 3\. Profit Margin
 
-excel
-
 ```
 =IFERROR((Sales-Cost)/Sales,0)
 ```
 
 4\. Sales Growth Percentage
-
-excel
 
 ```
 =IFERROR((CurrentSales-PreviousSales)/PreviousSales,0)
@@ -431,19 +417,19 @@ Format the profit margin and growth results as percentages.
 - Include a reporting period and define each KPI clearly.
 - Refresh the report and verify results before sharing it.
 
-Uses: Management dashboards, monthly sales reports, financial summaries, inventory reports, and employee performance reports.
+**Uses**: Management dashboards, monthly sales reports, financial summaries, inventory reports, and employee performance reports.
 
 ## Quick revision table
 
-| Topic | Definition in brief | Main purpose |
-| --- | --- | --- |
-| Pivot Table | Summarizes and analyzes data | Fast calculations and summaries |
-| Grouping | Combines items into categories | Easier analysis of dates and ranges |
-| Calculated Field | Adds a formula-based field | Derives metrics such as profit |
-| Filters | Displays selected data | Focuses on specific conditions |
-| Slicers | Visual filtering buttons | Interactive reporting |
-| Pivot Charts | Charts connected to Pivot Tables | Visual analysis |
-| Business Reporting | Presents business information | Better decisions and performance monitoring |
+|       Topic        |       Definition in brief           |               Main purpose                  |
+|       ---          |               ---                   |                     ---                     |
+|    Pivot Table     |   Summarizes and analyzes data      |     Fast calculations and summaries         |
+|     Grouping       |   Combines items into categories    |     Easier analysis of dates and ranges     |
+|   Calculated Field |   Adds a formula-based field        |       Derives metrics such as profit        |
+|     Filters        |    Displays selected data           |       Focuses on specific conditions        |
+|     Slicers        |   Visual filtering buttons          |           Interactive reporting             |
+|     Pivot Charts   |   Charts connected to Pivot Tables  |               Visual analysis               |
+| Business Reporting |    Presents business information    | Better decisions and performance monitoring |
 
 ## Key Takeaways
 
@@ -453,6 +439,6 @@ Uses: Management dashboards, monthly sales reports, financial summaries, invento
 4. Filters narrow the report to the data you need, while Slicers provide a visual and interactive way to do so.
 5. Pivot Charts turn summarized information into charts that respond to Pivot Table filtering.
 6. Business Reporting combines clean data, accurate KPIs, Pivot Tables, charts, and interactive filters to support decision-making.
-7. The overall workflow is: Clean data → Create Pivot Table → Add calculations → Apply grouping and filters → Create Pivot Charts → Build a dashboard → Refresh and verify.
+7. The overall workflow is: Clean data → Create Pivot Table → Add calculations → Apply grouping and filters → Create Pivot Charts → Build a       dashboard → Refresh and verify.
 
-Remember: Pivot Tables summarize data, grouping organizes it, calculated fields derive new metrics, filters and slicers control what you see, Pivot Charts visualize it, and business reporting turns the results into actionable information.
+**Remember**: Pivot Tables summarize data, grouping organizes it, calculated fields derive new metrics, filters and slicers control what you see, Pivot Charts visualize it, and business reporting turns the results into actionable information.
