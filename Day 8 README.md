@@ -20,7 +20,7 @@ A Pivot Table is an Excel tool used to summarize, organize, analyze, and compare
 Suppose your dataset contains the following sales records:
 -----------------------------
 | Region | Product |  Sales |
------------------------------
+|  ---   |   ---   |  ---   |
 | North  | Laptop  | 50,000 |
 | South  | Laptop  | 40,000 |
 | North  | Mobile  | 20,000 |
@@ -77,29 +77,29 @@ Grouping combines related items into larger categories in a Pivot Table. It help
 
 Suppose the dataset contains daily sales dates. Instead of displaying every date separately, Excel can group them by month.
 
-| Date | Sales |
-| --- | --- |
+|   Date      | Sales |
+|   ---       | ---   |
 | 05-Jan-2026 | 10,000 |
 | 15-Jan-2026 | 15,000 |
 | 10-Feb-2026 | 20,000 |
 
 After grouping by month:
 
-| Month | Total Sales |
-| --- | --- |
-| January | 25,000 |
-| February | 20,000 |
+|   Month   | Total Sales |
+|    ---    |      ---    |
+| January   |    25,000   |
+| February  |    20,000   |
 
 ### Example 2: Grouping numbers
 
 Student marks can be grouped into ranges:
 
 | Marks Range | Students |
-| --- | --- |
-| 0–49 | 5 |
-| 50–69 | 12 |
-| 70–89 | 18 |
-| 90–100 | 5 |
+|    ---      |   ---    |
+|   0–49      |    5     |
+|   50–69     |    12    |
+|   70–89     |    18    |
+|   90–100    |    5     |
 
 ### Syntax / procedure
 
@@ -140,37 +140,26 @@ $$
 \text{Profit}=\text{Sales}-\text{Cost}
 $$
 
-Example data:
+**Example data:**
 
-| Product | Sales | Cost |
-| --- | --- | --- |
-| Laptop | 50,000 | 35,000 |
-| Mobile | 30,000 | 20,000 |
+| Product |  Sales |  Cost  |
+|   ---   |   ---  |  ---   |
+| Laptop  | 50,000 | 35,000 |
+| Mobile  | 30,000 | 20,000 |
 
 The calculated profits are:
 
 | Product | Profit |
-| --- | --- |
-| Laptop | 15,000 |
-| Mobile | 10,000 |
-
-### Syntax
+|   ---   |   ---  |
+| Laptop  | 15,000 |
+| Mobile  | 10,000 |
 
 A calculated field uses a formula beginning with `=` and references field names.
 
-excel
+**Syntax** : =Sales-Cost
 
-```
-=Sales-Cost
-```
-
-Another example is calculating a profit margin:
-
-excel
-
-```
-=(Sales-Cost)/Sales
-```
+**Another example** is calculating a profit margin:
+**Syntax** =(Sales-Cost)/Sales
 
 Format the resulting field as a percentage when appropriate.
 
