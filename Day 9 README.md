@@ -1,6 +1,6 @@
 # Day 9
-# Daily Task
-# Excel Dashboard + Power Query Introduction
+# Data Analytics – Daily Task Update
+## Day 9: Dashboard Principles, KPI Cards, Power Query & Data Preparation
 
 ## 1. Introduction to Excel Dashboards
 
