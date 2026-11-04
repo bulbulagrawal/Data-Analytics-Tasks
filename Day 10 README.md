@@ -218,11 +218,62 @@ Mode is useful for identifying:
 - Most common customer age
 - Most frequently purchased category
 
+  ## Mode Formula for Alphabets or Non-Numerical Data in Excel
+
+The Excel function `MODE.SNGL()` works only with **numbers**, not text values such as alphabets, product names, or categories.
+
+For non-numerical data, you can use a combination of **INDEX, MATCH, and COUNTIF**.
+
+### Example Data
+
+| A |
+|---|
+| Apple |
+| Banana |
+| Apple |
+| Mango |
+| Apple |
+| Banana |
+
+The **mode** is **Apple** because it appears most frequently.
+
+### Excel Formula
+
+For Excel 365 or Excel 2021:
+
+```excel
+=INDEX(A2:A7,MODE(MATCH(A2:A7,A2:A7,0)))
+```
+
+This formula returns the most frequently occurring text value.
+
+### Alternative Formula Using UNIQUE and COUNTIF
+
+For modern Excel versions:
+
+```excel
+=LET(data,A2:A7,unique,UNIQUE(data),INDEX(unique,MATCH(MAX(COUNTIF(data,unique)),COUNTIF(data,unique),0)))
+```
+
+### How It Works
+
+- `UNIQUE(data)` → Creates a list of unique text values.
+- `COUNTIF(data,unique)` → Counts how many times each value occurs.
+- `MAX(...)` → Finds the highest frequency.
+- `MATCH(...)` → Finds the position of that highest frequency.
+- `INDEX(...)` → Returns the corresponding text value.
+
+**Example result:** `Apple`
+
+> **Tip for Data Analysts:** For categorical data, you can also use a **PivotTable** to count each category and quickly identify the category with the highest frequency.
+
 ### Example
 
 Product categories:
 
 `Electronics, Clothing, Electronics, Food, Electronics`
+
+=INDEX(A2:A6,MODE(MATCH(A2:A6,A2:A6,0)))
 
 The mode is **Electronics** because it occurs most frequently.
 
