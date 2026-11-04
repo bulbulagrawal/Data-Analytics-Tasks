@@ -138,6 +138,97 @@ For example:
 
 The value **500** significantly increases the mean, even though most values are between 20 and 35.
 
+# Difference Between Mean and Average in Excel
+
+The terms **mean** and **average** are often used interchangeably, but there is a small conceptual difference.
+
+## 1. Mean
+
+**Mean** is a specific statistical measure, usually referring to the **arithmetic mean**.
+
+It is calculated by adding all values and dividing by the total number of values.
+
+Original amountsEqual shares247
+
+\\(\bar{x} = \frac{2 + 4 + 7}{3} = \frac{13}{3} = 4\ \frac{1}{3}\\)
+
+x̄ is the arithmetic mean (simple average)
+
+\\(x_1\\)
+
+\\(x_2\\)
+
+\\(x_3\\)
+
+Remove valueAdd value
+
+Give feedback
+
+### Example
+
+Values: **10, 20, 30, 40, 50**
+
+Mean:
+
+**(10 + 20 + 30 + 40 + 50) ÷ 5 = 30**
+
+### Excel Formula
+
+```excel
+=AVERAGE(A2:A6)
+```
+
+Excel's `AVERAGE()` function calculates the **arithmetic mean**.
+
+---
+
+## 2. Average
+
+**Average** is a broader, everyday term for a value that represents the center or typical value of a dataset.
+
+Depending on the context, "average" might refer to:
+
+- **Mean**
+- **Median**
+- **Mode**
+
+However, in everyday business and Excel usage, **average usually means the arithmetic mean**.
+
+### Excel Formula
+
+```excel
+=AVERAGE(A2:A6)
+```
+
+---
+
+## Mean vs Average
+
+| Feature | Mean | Average |
+|---|---|---|
+| Meaning | A specific statistical calculation | A general term for a central value |
+| Calculation | Usually sum of values ÷ number of values | Can refer to mean, median, or mode |
+| Excel Formula | `=AVERAGE()` | `=AVERAGE()` when referring to arithmetic average |
+| Usage | More common in statistics | More common in everyday language and business |
+
+### Key Takeaway
+
+**In Excel, there is no separate formula called `MEAN()`.**
+
+To calculate the **mean (arithmetic mean)** or the commonly understood **average**, use:
+
+```excel
+=AVERAGE(range)
+```
+
+**Example:**
+
+```excel
+=AVERAGE(B2:B100)
+```
+
+For most data analysis tasks, **Mean = Average** when you are referring to the arithmetic average.
+
 ---
 
 ## 5. Median
