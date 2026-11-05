@@ -1,8 +1,5 @@
-# Day 12
-
 # Daily Task
-
-# Probability & Statistical Inference for Data Analysts
+# Day 12 - Probability & Statistical Inference for Data Analysts
 
 **Probability and statistical inference** help data analysts make decisions using data when it is not practical to study every member of a population.
 
