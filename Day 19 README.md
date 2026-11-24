@@ -157,7 +157,12 @@ jupyter notebook
 ### **Example**
 
 ```
-sales = 50000expenses = 20000profit = sales - expensesprint(profit)
+sales = 50000
+expenses = 20000
+
+profit = sales - expenses
+
+print(profit)
 ```
 
 Output:
@@ -199,7 +204,15 @@ variable_name = value
 ### **Examples**
 
 ```
-name = "Rahul"age = 25salary = 45000is_employee = Trueprint(name)print(age)print(salary)print(is_employee)
+name = "Rahul"
+age = 25
+salary = 45000
+is_employee = True
+
+print(name)
+print(age)
+print(salary)
+print(is_employee)
 ```
 
 Output:
@@ -214,7 +227,10 @@ True
 ### **Multiple variable assignments**
 
 ```
-a, b, c = 10, 20, 30print(a)print(b)print(c)
+a, b, c = 10, 20, 30
+print(a)
+print(b)
+print(c)
 ```
 
 Output:
@@ -238,7 +254,11 @@ Output:
 ### **Business Example**
 
 ```
-total_sales = 150000total_expenses = 90000profit = total_sales - total_expensesprint("Total Profit:", profit)
+total_sales = 150000
+total_expenses = 90000
+
+profit = total_sales - total_expenses
+print("Total Profit:", profit)
 ```
 
 Output:
@@ -275,7 +295,15 @@ Python has several built-in data types.
 ### **Example**
 
 ```
-employee_name = "Rahul"employee_age = 25employee_salary = 45000.50is_active = Trueprint(type(employee_name))print(type(employee_age))print(type(employee_salary))print(type(is_active))
+employee_name = "Rahul"
+employee_age = 25
+employee_salary = 45000.50
+is_active = True
+
+print(type(employee_name))
+print(type(employee_age))
+print(type(employee_salary))
+print(type(is_active))
 ```
 
 Output:
@@ -294,13 +322,21 @@ Type conversion means changing one data type into another.
 **Syntax:**
 
 ```
-int()float()str()bool()
+int()
+float()
+str()
+bool()
 ```
 
 Example:
 
 ```
-price = "500"new_price = int(price)print(new_price)print(type(new_price))
+price = "500"
+
+new_price = int(price)
+
+print(new_price)
+print(type(new_price))
 ```
 
 Output:
@@ -313,7 +349,12 @@ Output:
 Another example:
 
 ```
-quantity = 5price = 100.50total = quantity * priceprint(total)
+quantity = 5
+price = 100.50
+
+total = quantity * price
+
+print(total)
 ```
 
 Output:
@@ -351,7 +392,12 @@ Used for mathematical calculations.
 Example:
 
 ```
-sales = 100000expenses = 65000profit = sales - expensesprint("Profit:", profit)
+sales = 100000
+expenses = 65000
+
+profit = sales - expenses
+
+print("Profit:", profit)
 ```
 
 Output:
@@ -376,7 +422,10 @@ Used to compare two values. They return either `True` or `False`.
 Example:
 
 ```
-sales = 50000target = 40000print(sales > target)
+sales = 50000
+target = 40000
+
+print(sales > target)
 ```
 
 Output:
@@ -398,7 +447,10 @@ Used to combine multiple conditions.
 Example:
 
 ```
-sales = 60000target = 50000print(sales >= target and target > 0)
+sales = 60000
+target = 50000
+
+print(sales >= target and target > 0)
 ```
 
 Output:
@@ -422,7 +474,11 @@ Used to assign or update variable values.
 Example:
 
 ```
-sales = 10000sales += 5000print(sales)
+sales = 10000
+
+sales += 5000
+
+print(sales)
 ```
 
 Output:
@@ -446,7 +502,9 @@ Strings are used to store text information.
 Examples:
 
 ```
-name = "Rahul"company = 'ABC Technologies'message = """Welcome to Python"""
+name = "Rahul"
+company = 'ABC Technologies'
+message = """Welcome to Python"""
 ```
 
 ### **String Operations**
@@ -456,7 +514,12 @@ name = "Rahul"company = 'ABC Technologies'message = """Welcome to Python"""
 Joining two or more strings.
 
 ```
-first_name = "Rahul"last_name = "Sharma"full_name = first_name + " " + last_nameprint(full_name)
+first_name = "Rahul"
+last_name = "Sharma"
+
+full_name = first_name + " " + last_name
+
+print(full_name)
 ```
 
 Output:
@@ -470,7 +533,11 @@ Rahul Sharma
 Accessing individual characters using their positions.
 
 ```
-name = "PYTHON"print(name[0])print(name[1])print(name[-1])
+name = "PYTHON"
+
+print(name[0])
+print(name[1])
+print(name[-1])
 ```
 
 Output:
@@ -494,7 +561,9 @@ string[start:end]
 Example:
 
 ```
-name = "PYTHON"print(name[0:3])
+name = "PYTHON"
+
+print(name[0:3])
 ```
 
 Output:
@@ -519,7 +588,11 @@ PYT
 ### **Practical Example**
 
 ```
-customer_name = "  rahul sharma  "clean_name = customer_name.strip().title()print(clean_name)
+customer_name = "  rahul sharma  "
+
+clean_name = customer_name.strip().title()
+
+print(clean_name)
 ```
 
 Output:
@@ -554,7 +627,9 @@ list_name = [value1, value2, value3]
 ### **Example**
 
 ```
-sales = [10000, 15000, 20000, 25000]print(sales)
+sales = [10000, 15000, 20000, 25000]
+
+print(sales)
 ```
 
 Output:
@@ -566,7 +641,10 @@ Output:
 ### **Accessing List Elements**
 
 ```
-products = ["Laptop", "Mobile", "Tablet"]print(products[0])print(products[1])
+products = ["Laptop", "Mobile", "Tablet"]
+
+print(products[0])
+print(products[1])
 ```
 
 Output:
@@ -591,7 +669,15 @@ Mobile
 ### **Example**
 
 ```
-sales = [10000, 20000, 15000]sales.append(25000)print(sales)sales.remove(15000)print(sales)
+sales = [10000, 20000, 15000]
+
+sales.append(25000)
+
+print(sales)
+
+sales.remove(15000)
+
+print(sales)
 ```
 
 Output:
@@ -604,7 +690,13 @@ Output:
 ### **Practical Business Example**
 
 ```
-monthly_sales = [50000, 60000, 75000, 90000]total_sales = sum(monthly_sales)average_sales = total_sales / len(monthly_sales)print("Total Sales:", total_sales)print("Average Sales:", average_sales)
+monthly_sales = [50000, 60000, 75000, 90000]
+
+total_sales = sum(monthly_sales)
+average_sales = total_sales / len(monthly_sales)
+
+print("Total Sales:", total_sales)
+print("Average Sales:", average_sales)
 ```
 
 Output:
@@ -640,7 +732,9 @@ tuple_name = (value1, value2, value3)
 ### **Example**
 
 ```
-employee = ("Rahul", 25, "Data Analyst")print(employee)
+employee = ("Rahul", 25, "Data Analyst")
+
+print(employee)
 ```
 
 Output:
@@ -652,7 +746,10 @@ Output:
 ### **Accessing Tuple Elements**
 
 ```
-employee = ("Rahul", 25, "Data Analyst")print(employee[0])print(employee[1])
+employee = ("Rahul", 25, "Data Analyst")
+
+print(employee[0])
+print(employee[1])
 ```
 
 Output:
@@ -672,7 +769,10 @@ Rahul
 Example:
 
 ```
-numbers = (10, 20, 30, 20, 40)print(numbers.count(20))print(numbers.index(30))
+numbers = (10, 20, 30, 20, 40)
+
+print(numbers.count(20))
+print(numbers.index(30))
 ```
 
 Output:
@@ -715,13 +815,25 @@ Dictionaries are:
 ### **Syntax**
 
 ```
-dictionary_name = {    "key1": "value1",    "key2": "value2"}
+dictionary_name =
+{
+    "key1": "value1",
+    "key2": "value2"
+}
 ```
 
 ### **Example**
 
 ```
-employee = {    "name": "Rahul",    "age": 25,    "salary": 45000,    "department": "Analytics"}print(employee)
+employee =
+{
+    "name": "Rahul",
+    "age": 25,
+    "salary": 45000,
+    "department": "Analytics"
+}
+
+print(employee)
 ```
 
 Output:
@@ -733,7 +845,8 @@ Output:
 ### **Accessing Values**
 
 ```
-print(employee["name"])print(employee["salary"])
+print(employee["name"])
+print(employee["salary"])
 ```
 
 Output:
@@ -757,7 +870,16 @@ Rahul
 ### **Practical Example**
 
 ```
-employee = {    "name": "Rahul",    "salary": 45000}employee["department"] = "Analytics"employee["salary"] = 50000print(employee)
+employee = {
+    "name": "Rahul",
+    "salary": 45000
+}
+
+employee["department"] = "Analytics"
+
+employee["salary"] = 50000
+
+print(employee)
 ```
 
 Output:
@@ -769,7 +891,8 @@ Output:
 ### **Using get()**
 
 ```
-print(employee.get("name"))print(employee.get("age", "Not Available"))
+print(employee.get("name"))
+print(employee.get("age", "Not Available"))
 ```
 
 Output:
@@ -805,7 +928,8 @@ set_name = {value1, value2, value3}
 ### **Example**
 
 ```
-numbers = {10, 20, 30, 20, 10}print(numbers)
+numbers = {10, 20, 30, 20, 10}
+print(numbers)
 ```
 
 Output (order may vary):
@@ -830,7 +954,11 @@ Notice that duplicate values are automatically removed.
 ### **Example 1 — Removing Duplicates**
 
 ```
-customer_ids = [101, 102, 103, 101, 102]unique_customers = set(customer_ids)print(unique_customers)
+customer_ids = [101, 102, 103, 101, 102]
+
+unique_customers = set(customer_ids)
+
+print(unique_customers)
 ```
 
 Output (order may vary):
@@ -842,7 +970,10 @@ Output (order may vary):
 ### **Example 2 — Union**
 
 ```
-A = {1, 2, 3}B = {3, 4, 5}print(A.union(B))
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+print(A.union(B))
 ```
 
 Output:
@@ -854,7 +985,10 @@ Output:
 ### **Example 3 — Intersection**
 
 ```
-A = {1, 2, 3}B = {3, 4, 5}print(A.intersection(B))
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+print(A.intersection(B))
 ```
 
 Output:
@@ -866,7 +1000,10 @@ Output:
 ### **Example 4 — Difference**
 
 ```
-A = {1, 2, 3}B = {3, 4, 5}print(A.difference(B))
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+print(A.difference(B))
 ```
 
 Output:
@@ -897,7 +1034,17 @@ This is one of the most important concepts to remember for data analytics interv
 **Quick examples:**
 
 ```
-# Listsales = [100, 200, 300]# Tuplemonths = ("Jan", "Feb", "Mar")# Dictionaryemployee = {"name": "Rahul", "age": 25}# Setunique_ids = {101, 102, 103}
+# List
+sales = [100, 200, 300]
+
+# Tuple
+months = ("Jan", "Feb", "Mar")
+
+# Dictionary
+employee = {"name": "Rahul", "age": 25}
+
+# Set
+unique_ids = {101, 102, 103}
 ```
 
 # **13. Practical Business Project — Monthly Sales Analysis**
@@ -917,7 +1064,35 @@ This is one of the most important concepts to remember for data analytics interv
 ### **Python Program**
 
 ```
-# Product informationproducts = ["Laptop", "Mobile", "Tablet",            "Keyboard", "Mouse"]# Sales informationsales = [50000, 30000, 20000, 10000, 5000]# Total salestotal_sales = sum(sales)# Average salesaverage_sales = total_sales / len(sales)# Highest saleshighest_sales = max(sales)# Lowest saleslowest_sales = min(sales)# Dictionaryreport = {    "Total Sales": total_sales,    "Average Sales": average_sales,    "Highest Sales": highest_sales,    "Lowest Sales": lowest_sales}# Display reportprint(report)
+# Product information
+products = ["Laptop", "Mobile", "Tablet",
+            "Keyboard", "Mouse"]
+
+# Sales information
+sales = [50000, 30000, 20000, 10000, 5000]
+
+# Total sales
+total_sales = sum(sales)
+
+# Average sales
+average_sales = total_sales / len(sales)
+
+# Highest sales
+highest_sales = max(sales)
+
+# Lowest sales
+lowest_sales = min(sales)
+
+# Dictionary
+report = {
+    "Total Sales": total_sales,
+    "Average Sales": average_sales,
+    "Highest Sales": highest_sales,
+    "Lowest Sales": lowest_sales
+}
+
+# Display report
+print(report)
 ```
 
 ### **Expected Output**
@@ -954,7 +1129,13 @@ This is one of the most important concepts to remember for data analytics interv
 Example of comments:
 
 ```
-# Calculate total monthly revenuesales = [10000, 20000, 30000]total_sales = sum(sales)print(total_sales)
+# Calculate total monthly revenue
+
+sales = [10000, 20000, 30000]
+
+total_sales = sum(sales)
+
+print(total_sales)
 ```
 
 # **15. Practice Tasks — Day 19**
